@@ -31,11 +31,27 @@ namespace InventorySystem.Services.Controllers
             return StatusCode((int)response.StatusHttp, response);
         }
 
+        // GET: api/<ItemsController>
+        [HttpGet("/Stock")]
+        public async Task<ActionResult<IEnumerable<ItemStockBalanceDto>>> GetAllStockBalance()
+        {
+            var response = await _itemCore.GetItemsStockBalanceAsync();
+            return StatusCode((int)response.StatusHttp, response);
+        }
+
         // GET api/<ItemsController>/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Item>> Get(int id)
         {
             var response = await _itemCore.GetItemByIdAsync(id);
+            return StatusCode((int)response.StatusHttp, response);
+        }
+
+        // GET api/<ItemsController>/5
+        [HttpGet("/Stock/{id}")]
+        public async Task<ActionResult<ItemStockBalanceDto>> GetStockBalance(int id)
+        {
+            var response = await _itemCore.GetItemByIdStockBalanceAsync(id);
             return StatusCode((int)response.StatusHttp, response);
         }
 

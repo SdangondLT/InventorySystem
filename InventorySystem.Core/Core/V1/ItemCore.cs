@@ -42,18 +42,49 @@ namespace InventorySystem.Core.Core.V1
             }
         }
 
+        public async Task<ResponseService<List<ItemStockBalanceDto>>> GetItemsStockBalanceAsync()
+        {
+            try
+            {
+                var response = await _context.GetAllAsync();
+                List<ItemStockBalanceDto> newItem = new();
+                newItem = _mapper.Map<List<ItemStockBalanceDto>>(response);
+                return new ResponseService<List<ItemStockBalanceDto>>(false, newItem.Count == 0 ? "No records found" : $"{newItem.Count} records found", HttpStatusCode.OK, newItem);
+            }
+            catch (Exception ex)
+            {
+                return _errorHandler.Error(ex, "GetItemsStockBalanceAsync", new List<ItemStockBalanceDto>());
+            }
+        }
+
         public async Task<ResponseService<Item>> GetItemByIdAsync(int id)
         {
             try
             {
-                var result = await _context.GetByIdAsync(id);
-                return new ResponseService<Item>(false, result == null ? "No records found" : "Record found:", HttpStatusCode.OK, result);
+                var response = await _context.GetByIdAsync(id);
+                return new ResponseService<Item>(false, response == null ? "No records found" : "Record found:", HttpStatusCode.OK, response);
             }
             catch (Exception ex)
             {
                 return _errorHandler.Error(ex, "GetItemByIdAsync", new Item());
             }
         }
+
+        public async Task<ResponseService<ItemStockBalanceDto>> GetItemByIdStockBalanceAsync(int id)
+        {
+            try
+            {
+                var response = await _context.GetByIdAsync(id);
+                ItemStockBalanceDto newItem = new();
+                newItem = _mapper.Map<ItemStockBalanceDto>(response);
+                return new ResponseService<ItemStockBalanceDto>(false, newItem == null ? "No records found" : "Record found:", HttpStatusCode.OK, newItem);
+            }
+            catch (Exception ex)
+            {
+                return _errorHandler.Error(ex, "GetItemByIdStockBalanceAsync", new ItemStockBalanceDto());
+            }
+        }
+
 
         public async Task<ResponseService<Item>> CreateItemAsync(ItemCreateDto entity)
         {
@@ -62,8 +93,8 @@ namespace InventorySystem.Core.Core.V1
 
             try
             {
-                var result = await _context.AddAsync(newItem);
-                return new ResponseService<Item>(false, "Succefully created Item", HttpStatusCode.Created, result.Item1);
+                var response = await _context.AddAsync(newItem);
+                return new ResponseService<Item>(false, "Succefully created Item", HttpStatusCode.Created, response.Item1);
             }
             catch (Exception ex)
             {
@@ -75,8 +106,8 @@ namespace InventorySystem.Core.Core.V1
         {
             try
             {
-                var result = await _context.UpdateAsync(itemToUpdate);
-                return new ResponseService<bool>(false, result == true ? "Record updated !!" : "Record not updated:", HttpStatusCode.Created, result);
+                var response = await _context.UpdateAsync(itemToUpdate);
+                return new ResponseService<bool>(false, response == true ? "Record updated !!" : "Record not updated:", HttpStatusCode.Created, response);
             }
             catch (Exception ex)
             {
