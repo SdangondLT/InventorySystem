@@ -4,6 +4,7 @@ using InventorySystem.Core.Core.Handlers;
 using InventorySystem.Entities.DTOs;
 using InventorySystem.Entities.Entities;
 using InventorySystem.Entities.Utils;
+using InventorySystem.Repositories.ImplementRepositories;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -20,13 +21,15 @@ namespace InventorySystem.Core.Core.V1
         private readonly ILogger<Movement> _logger;
         private readonly ErrorHandler<Movement> _errorHandler;
         private readonly IMapper _mapper;
+        private readonly IItemRepository _itemRepository;
 
-        public MovementCore(ILogger<Movement> logger, IMapper mapper, IMovementRepository context)
+        public MovementCore(ILogger<Movement> logger, IMapper mapper, IMovementRepository context, IItemRepository itemRepository)
         {
             _logger = logger;
             _errorHandler = new ErrorHandler<Movement>(logger);
             _context = context;
             _mapper = mapper;
+            _itemRepository = itemRepository;
         }
 
         public async Task<ResponseService<List<Movement>>> GetMovementsAsync()
@@ -63,7 +66,27 @@ namespace InventorySystem.Core.Core.V1
             try
             {
                 var result = await _context.AddAsync(newMovement);
-                return new ResponseService<Movement>(false, "Succefully created Movement", HttpStatusCode.Created, result.Item1);
+                //IItemRepository itemRepository = new ItemRepository();
+                Item item = await _itemRepository.GetByIdAsync(entity.IdItem);
+
+
+                if (entity.TypeOfMovement == 1)
+                {
+                    item.StockBalance += entity.Quantity;
+                }
+                else
+                {
+                    item.StockBalance -= entity.Quantity;
+                }
+
+                var verification = await _itemRepository.UpdateAsync(item);
+                if (verification)
+                {
+                    return new ResponseService<Movement>(false, "Succefully created Movement", HttpStatusCode.Created, result.Item1);
+                } else
+                {
+                    return new ResponseService<Movement>(true, "Unsuccefully created Movement", HttpStatusCode.NotAcceptable, result.Item1);
+                }
             }
             catch (Exception ex)
             {

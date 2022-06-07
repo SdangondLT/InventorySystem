@@ -33,13 +33,8 @@ namespace InventorySystem.DataAccess.Context
         {
             modelBuilder.Entity<Item>().HasKey(c => new { c.IdItem });
             modelBuilder.Entity<Item>().Property(c => c.IdItem).UseIdentityColumn().Metadata.SetBeforeSaveBehavior(Microsoft.EntityFrameworkCore.Metadata.PropertySaveBehavior.Ignore);
-            
+        
             modelBuilder.Entity<Movement>().HasKey(c => new { c.IdMovement });
-            
-            //modelBuilder.Entity<Movement>().HasOne<Item>(c => c.IdItem).WithMany().HasForeignKey<Item>((C => C.IdItem);
-            //modelBuilder.Entity<Movement>().HasOne<Item>(c => Item).WithMany(c => c.).HasForeignKey(c => c.IdItem);
-
-
             modelBuilder.Entity<Movement>().Property(c => c.IdMovement).UseIdentityColumn().Metadata.SetBeforeSaveBehavior(Microsoft.EntityFrameworkCore.Metadata.PropertySaveBehavior.Ignore);
            
             base.OnModelCreating(modelBuilder);

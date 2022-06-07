@@ -18,9 +18,9 @@ namespace InventorySystem.Services.Controllers
     {
         private readonly MovementCore _movementCore;
 
-        public MovementController(ILogger<Movement> logger, IMapper mapper, IMovementRepository context)
+        public MovementController(ILogger<Movement> logger, IMapper mapper, IMovementRepository context, IItemRepository itemRepository)
         {
-            _movementCore = new MovementCore(logger, mapper, context);
+            _movementCore = new MovementCore(logger, mapper, context, itemRepository);
         }
 
         // GET: api/<MovementController>

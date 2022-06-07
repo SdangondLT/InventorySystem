@@ -12,6 +12,7 @@
   <ItemGroup>
     <ProjectReference Include="..\InventorySystem.Contracts\InventorySystem.Contracts.csproj" />
     <ProjectReference Include="..\InventorySystem.Entities\InventorySystem.Entities.csproj" />
+    <ProjectReference Include="..\InventorySystem.Repositories\InventorySystem.Repositories.csproj" />
   </ItemGroup>
 
 </Project>

@@ -70,6 +70,7 @@ namespace InventorySystem.Core.Core.V1
             }
         }
 
+
         public async Task<ResponseService<ItemStockBalanceDto>> GetItemByIdStockBalanceAsync(int id)
         {
             try

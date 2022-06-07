@@ -613,3 +613,290 @@ Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP meth
 2022-06-06 19:18:12.881 -05:00 [INF] Executed action InventorySystem.Services.Controllers.ItemController.GetAllStockBalance (InventorySystem.Services) in 1122.6098ms
 2022-06-06 19:18:12.882 -05:00 [INF] Executed endpoint 'InventorySystem.Services.Controllers.ItemController.GetAllStockBalance (InventorySystem.Services)'
 2022-06-06 19:18:12.883 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44348/Stock - - - 200 - application/json;+charset=utf-8 1193.8856ms
+2022-06-06 20:24:55.501 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-06 20:24:55.518 -05:00 [INF] Hosting environment: Development
+2022-06-06 20:24:55.518 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44348/swagger/index.html - -
+2022-06-06 20:24:55.519 -05:00 [INF] Content root path: C:\silena_dangond\backEnd\stage3BE\BackEnd_Stage3_Test3\InventorySystem.Services\InventorySystem.Services
+2022-06-06 20:24:55.762 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44348/swagger/index.html - - - 200 - text/html;charset=utf-8 246.4600ms
+2022-06-06 20:24:55.763 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44348/_framework/aspnetcore-browser-refresh.js - -
+2022-06-06 20:24:55.784 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44348/_framework/aspnetcore-browser-refresh.js - - - 200 12006 application/javascript;+charset=utf-8 19.3310ms
+2022-06-06 20:24:55.915 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44348/swagger/v1/swagger.json - -
+2022-06-06 20:24:56.011 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44348/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 96.0123ms
+2022-06-06 20:25:02.246 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44348/api/Movement - -
+2022-06-06 20:25:02.296 -05:00 [INF] Executing endpoint 'InventorySystem.Services.Controllers.MovementController.Get (InventorySystem.Services)'
+2022-06-06 20:25:02.332 -05:00 [INF] Route matched with {action = "Get", controller = "Movement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[InventorySystem.Entities.Entities.Movement]]] Get() on controller InventorySystem.Services.Controllers.MovementController (InventorySystem.Services).
+2022-06-06 20:25:03.750 -05:00 [INF] Executing ObjectResult, writing value of type 'InventorySystem.Entities.Utils.ResponseService`1[[System.Collections.Generic.List`1[[InventorySystem.Entities.Entities.Movement, InventorySystem.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-06-06 20:25:03.780 -05:00 [INF] Executed action InventorySystem.Services.Controllers.MovementController.Get (InventorySystem.Services) in 1443.7472ms
+2022-06-06 20:25:03.781 -05:00 [INF] Executed endpoint 'InventorySystem.Services.Controllers.MovementController.Get (InventorySystem.Services)'
+2022-06-06 20:25:03.782 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44348/api/Movement - - - 200 - application/json;+charset=utf-8 1535.6218ms
+2022-06-06 20:26:11.441 -05:00 [INF] Request starting HTTP/2 POST https://localhost:44348/api/Movement application/json 117
+2022-06-06 20:26:11.452 -05:00 [INF] Executing endpoint 'InventorySystem.Services.Controllers.MovementController.Post (InventorySystem.Services)'
+2022-06-06 20:26:11.475 -05:00 [INF] Route matched with {action = "Post", controller = "Movement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[InventorySystem.Entities.Entities.Movement]] Post(InventorySystem.Entities.DTOs.MovementCreateDto) on controller InventorySystem.Services.Controllers.MovementController (InventorySystem.Services).
+2022-06-06 20:26:11.704 -05:00 [INF] Executing ObjectResult, writing value of type 'InventorySystem.Entities.Utils.ResponseService`1[[InventorySystem.Entities.Entities.Movement, InventorySystem.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-06-06 20:26:11.705 -05:00 [INF] Executed action InventorySystem.Services.Controllers.MovementController.Post (InventorySystem.Services) in 229.986ms
+2022-06-06 20:26:11.705 -05:00 [INF] Executed endpoint 'InventorySystem.Services.Controllers.MovementController.Post (InventorySystem.Services)'
+2022-06-06 20:26:11.705 -05:00 [INF] Request finished HTTP/2 POST https://localhost:44348/api/Movement application/json 117 - 201 - application/json;+charset=utf-8 264.1351ms
+2022-06-06 20:53:57.892 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-06 20:53:57.910 -05:00 [INF] Hosting environment: Development
+2022-06-06 20:53:57.909 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44348/swagger/index.html - -
+2022-06-06 20:53:57.912 -05:00 [INF] Content root path: C:\silena_dangond\backEnd\stage3BE\BackEnd_Stage3_Test3\InventorySystem.Services\InventorySystem.Services
+2022-06-06 20:53:58.206 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44348/_framework/aspnetcore-browser-refresh.js - -
+2022-06-06 20:53:58.206 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44348/swagger/index.html - - - 200 - text/html;charset=utf-8 300.3823ms
+2022-06-06 20:53:58.239 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44348/_framework/aspnetcore-browser-refresh.js - - - 200 12006 application/javascript;+charset=utf-8 16.7090ms
+2022-06-06 20:53:58.365 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44348/swagger/v1/swagger.json - -
+2022-06-06 20:53:58.736 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44348/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 371.4586ms
+2022-06-06 21:01:25.846 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-06 21:01:25.879 -05:00 [INF] Hosting environment: Development
+2022-06-06 21:01:25.881 -05:00 [INF] Content root path: C:\silena_dangond\backEnd\stage3BE\BackEnd_Stage3_Test3\InventorySystem.Services\InventorySystem.Services
+2022-06-06 21:01:25.927 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44348/swagger/index.html - -
+2022-06-06 21:01:26.231 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44348/_framework/aspnetcore-browser-refresh.js - -
+2022-06-06 21:01:26.231 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44348/swagger/index.html - - - 200 - text/html;charset=utf-8 306.1926ms
+2022-06-06 21:01:26.240 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44348/_framework/aspnetcore-browser-refresh.js - - - 200 12006 application/javascript;+charset=utf-8 8.1879ms
+2022-06-06 21:01:26.404 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44348/swagger/v1/swagger.json - -
+2022-06-06 21:01:26.506 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44348/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 101.6756ms
+2022-06-06 21:02:10.556 -05:00 [INF] Request starting HTTP/2 POST https://localhost:44348/api/Movement application/json 117
+2022-06-06 21:02:10.602 -05:00 [INF] Executing endpoint 'InventorySystem.Services.Controllers.MovementController.Post (InventorySystem.Services)'
+2022-06-06 21:02:10.632 -05:00 [INF] Route matched with {action = "Post", controller = "Movement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[InventorySystem.Entities.Entities.Movement]] Post(InventorySystem.Entities.DTOs.MovementCreateDto) on controller InventorySystem.Services.Controllers.MovementController (InventorySystem.Services).
+2022-06-06 21:02:10.755 -05:00 [INF] Executed action InventorySystem.Services.Controllers.MovementController.Post (InventorySystem.Services) in 116.0731ms
+2022-06-06 21:02:10.757 -05:00 [INF] Executed endpoint 'InventorySystem.Services.Controllers.MovementController.Post (InventorySystem.Services)'
+2022-06-06 21:02:10.760 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'InventorySystem.Core.Core.V1.ItemCore' while attempting to activate 'InventorySystem.Services.Controllers.MovementController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method9(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-06-06 21:02:10.872 -05:00 [INF] Request finished HTTP/2 POST https://localhost:44348/api/Movement application/json 117 - 500 - text/plain 315.8462ms
+2022-06-06 21:04:40.799 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-06 21:04:40.815 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44348/swagger/index.html - -
+2022-06-06 21:04:40.818 -05:00 [INF] Hosting environment: Development
+2022-06-06 21:04:40.818 -05:00 [INF] Content root path: C:\silena_dangond\backEnd\stage3BE\BackEnd_Stage3_Test3\InventorySystem.Services\InventorySystem.Services
+2022-06-06 21:04:41.069 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44348/_framework/aspnetcore-browser-refresh.js - -
+2022-06-06 21:04:41.070 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44348/swagger/index.html - - - 200 - text/html;charset=utf-8 260.6652ms
+2022-06-06 21:04:41.082 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44348/_framework/aspnetcore-browser-refresh.js - - - 200 12006 application/javascript;+charset=utf-8 11.6120ms
+2022-06-06 21:04:41.231 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44348/swagger/v1/swagger.json - -
+2022-06-06 21:04:41.352 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44348/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 120.6269ms
+2022-06-06 21:05:07.235 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-06 21:05:07.258 -05:00 [INF] Hosting environment: Development
+2022-06-06 21:05:07.257 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44348/swagger/index.html - -
+2022-06-06 21:05:07.260 -05:00 [INF] Content root path: C:\silena_dangond\backEnd\stage3BE\BackEnd_Stage3_Test3\InventorySystem.Services\InventorySystem.Services
+2022-06-06 21:05:07.509 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44348/_framework/aspnetcore-browser-refresh.js - -
+2022-06-06 21:05:07.510 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44348/swagger/index.html - - - 200 - text/html;charset=utf-8 256.9356ms
+2022-06-06 21:05:07.535 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44348/_framework/aspnetcore-browser-refresh.js - - - 200 12006 application/javascript;+charset=utf-8 9.5175ms
+2022-06-06 21:05:07.654 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44348/swagger/v1/swagger.json - -
+2022-06-06 21:05:07.768 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44348/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 113.5143ms
+2022-06-06 21:05:27.747 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44348/api/Movement - -
+2022-06-06 21:05:27.780 -05:00 [INF] Executing endpoint 'InventorySystem.Services.Controllers.MovementController.Get (InventorySystem.Services)'
+2022-06-06 21:05:27.813 -05:00 [INF] Route matched with {action = "Get", controller = "Movement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[InventorySystem.Entities.Entities.Movement]]] Get() on controller InventorySystem.Services.Controllers.MovementController (InventorySystem.Services).
+2022-06-06 21:05:27.879 -05:00 [INF] Executed action InventorySystem.Services.Controllers.MovementController.Get (InventorySystem.Services) in 61.8666ms
+2022-06-06 21:05:27.881 -05:00 [INF] Executed endpoint 'InventorySystem.Services.Controllers.MovementController.Get (InventorySystem.Services)'
+2022-06-06 21:05:27.884 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'InventorySystem.Core.Core.V1.ItemCore' while attempting to activate 'InventorySystem.Services.Controllers.MovementController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method9(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-06-06 21:05:27.935 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44348/api/Movement - - - 500 - text/plain 188.2553ms
+2022-06-06 21:06:08.736 -05:00 [INF] Request starting HTTP/2 POST https://localhost:44348/api/Movement application/json 117
+2022-06-06 21:06:08.741 -05:00 [INF] Executing endpoint 'InventorySystem.Services.Controllers.MovementController.Post (InventorySystem.Services)'
+2022-06-06 21:06:08.770 -05:00 [INF] Route matched with {action = "Post", controller = "Movement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[InventorySystem.Entities.Entities.Movement]] Post(InventorySystem.Entities.DTOs.MovementCreateDto) on controller InventorySystem.Services.Controllers.MovementController (InventorySystem.Services).
+2022-06-06 21:06:08.772 -05:00 [INF] Executed action InventorySystem.Services.Controllers.MovementController.Post (InventorySystem.Services) in 1.196ms
+2022-06-06 21:06:08.772 -05:00 [INF] Executed endpoint 'InventorySystem.Services.Controllers.MovementController.Post (InventorySystem.Services)'
+2022-06-06 21:06:08.772 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'InventorySystem.Core.Core.V1.ItemCore' while attempting to activate 'InventorySystem.Services.Controllers.MovementController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method19(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-06-06 21:06:08.775 -05:00 [INF] Request finished HTTP/2 POST https://localhost:44348/api/Movement application/json 117 - 500 - text/plain 38.4390ms
+2022-06-06 21:07:00.181 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-06 21:07:00.219 -05:00 [INF] Hosting environment: Development
+2022-06-06 21:07:00.222 -05:00 [INF] Content root path: C:\silena_dangond\backEnd\stage3BE\BackEnd_Stage3_Test3\InventorySystem.Services\InventorySystem.Services
+2022-06-06 21:07:00.221 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44348/swagger/index.html - -
+2022-06-06 21:07:00.605 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44348/_framework/aspnetcore-browser-refresh.js - -
+2022-06-06 21:07:00.606 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44348/swagger/index.html - - - 200 - text/html;charset=utf-8 383.5979ms
+2022-06-06 21:07:00.642 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44348/_framework/aspnetcore-browser-refresh.js - - - 200 12006 application/javascript;+charset=utf-8 34.1244ms
+2022-06-06 21:07:00.807 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44348/swagger/v1/swagger.json - -
+2022-06-06 21:07:00.942 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44348/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 135.3112ms
+2022-06-06 21:07:55.822 -05:00 [INF] Request starting HTTP/2 POST https://localhost:44348/api/Movement application/json 112
+2022-06-06 21:07:55.877 -05:00 [INF] Executing endpoint 'InventorySystem.Services.Controllers.MovementController.Post (InventorySystem.Services)'
+2022-06-06 21:07:55.914 -05:00 [INF] Route matched with {action = "Post", controller = "Movement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[InventorySystem.Entities.Entities.Movement]] Post(InventorySystem.Entities.DTOs.MovementCreateDto) on controller InventorySystem.Services.Controllers.MovementController (InventorySystem.Services).
+2022-06-06 21:07:55.981 -05:00 [INF] Executed action InventorySystem.Services.Controllers.MovementController.Post (InventorySystem.Services) in 63.7105ms
+2022-06-06 21:07:55.984 -05:00 [INF] Executed endpoint 'InventorySystem.Services.Controllers.MovementController.Post (InventorySystem.Services)'
+2022-06-06 21:07:55.987 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'InventorySystem.Core.Core.V1.ItemCore' while attempting to activate 'InventorySystem.Services.Controllers.MovementController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method9(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-06-06 21:07:56.048 -05:00 [INF] Request finished HTTP/2 POST https://localhost:44348/api/Movement application/json 112 - 500 - text/plain 226.9850ms
+2022-06-06 21:09:12.382 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-06 21:09:12.422 -05:00 [INF] Hosting environment: Development
+2022-06-06 21:09:12.423 -05:00 [INF] Content root path: C:\silena_dangond\backEnd\stage3BE\BackEnd_Stage3_Test3\InventorySystem.Services\InventorySystem.Services
+2022-06-06 21:09:12.423 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44348/swagger/index.html - -
+2022-06-06 21:09:12.790 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44348/_framework/aspnetcore-browser-refresh.js - -
+2022-06-06 21:09:12.796 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44348/swagger/index.html - - - 200 - text/html;charset=utf-8 383.6949ms
+2022-06-06 21:09:12.814 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44348/_framework/aspnetcore-browser-refresh.js - - - 200 12006 application/javascript;+charset=utf-8 21.3272ms
+2022-06-06 21:09:13.132 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44348/swagger/v1/swagger.json - -
+2022-06-06 21:09:13.305 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44348/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 173.6392ms
+2022-06-07 09:04:00.240 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-07 09:04:00.264 -05:00 [INF] Hosting environment: Development
+2022-06-07 09:04:00.265 -05:00 [INF] Content root path: C:\silena_dangond\backEnd\stage3BE\BackEnd_Stage3_Test3\InventorySystem.Services\InventorySystem.Services
+2022-06-07 09:04:00.359 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44348/swagger/index.html - -
+2022-06-07 09:04:00.686 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44348/_framework/aspnetcore-browser-refresh.js - -
+2022-06-07 09:04:00.687 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44348/swagger/index.html - - - 200 - text/html;charset=utf-8 330.6407ms
+2022-06-07 09:04:00.691 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44348/_framework/aspnetcore-browser-refresh.js - - - 200 12006 application/javascript;+charset=utf-8 3.6009ms
+2022-06-07 09:04:00.867 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44348/swagger/v1/swagger.json - -
+2022-06-07 09:04:00.959 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44348/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 92.3643ms
+2022-06-07 09:04:29.860 -05:00 [INF] Request starting HTTP/2 POST https://localhost:44348/api/Movement application/json 111
+2022-06-07 09:04:29.908 -05:00 [INF] Executing endpoint 'InventorySystem.Services.Controllers.MovementController.Post (InventorySystem.Services)'
+2022-06-07 09:04:29.943 -05:00 [INF] Route matched with {action = "Post", controller = "Movement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[InventorySystem.Entities.Entities.Movement]] Post(InventorySystem.Entities.DTOs.MovementCreateDto) on controller InventorySystem.Services.Controllers.MovementController (InventorySystem.Services).
+2022-06-07 09:04:30.070 -05:00 [INF] Executed action InventorySystem.Services.Controllers.MovementController.Post (InventorySystem.Services) in 122.1765ms
+2022-06-07 09:04:30.073 -05:00 [INF] Executed endpoint 'InventorySystem.Services.Controllers.MovementController.Post (InventorySystem.Services)'
+2022-06-07 09:04:30.077 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'InventorySystem.Core.Core.V1.ItemCore' while attempting to activate 'InventorySystem.Services.Controllers.MovementController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method9(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-06-07 09:04:30.211 -05:00 [INF] Request finished HTTP/2 POST https://localhost:44348/api/Movement application/json 111 - 500 - text/plain 351.2525ms
+2022-06-07 09:05:58.443 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-07 09:05:58.456 -05:00 [INF] Hosting environment: Development
+2022-06-07 09:05:58.457 -05:00 [INF] Content root path: C:\silena_dangond\backEnd\stage3BE\BackEnd_Stage3_Test3\InventorySystem.Services\InventorySystem.Services
+2022-06-07 09:05:58.457 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44348/swagger/index.html - -
+2022-06-07 09:05:58.646 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44348/_framework/aspnetcore-browser-refresh.js - -
+2022-06-07 09:05:58.646 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44348/swagger/index.html - - - 200 - text/html;charset=utf-8 187.9491ms
+2022-06-07 09:05:58.666 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44348/_framework/aspnetcore-browser-refresh.js - - - 200 12006 application/javascript;+charset=utf-8 11.5245ms
+2022-06-07 09:05:58.781 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44348/swagger/v1/swagger.json - -
+2022-06-07 09:05:58.891 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44348/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 109.8600ms
+2022-06-07 09:06:05.318 -05:00 [INF] Request starting HTTP/2 POST https://localhost:44348/api/Movement application/json 115
+2022-06-07 09:06:05.357 -05:00 [INF] Executing endpoint 'InventorySystem.Services.Controllers.MovementController.Post (InventorySystem.Services)'
+2022-06-07 09:06:05.395 -05:00 [INF] Route matched with {action = "Post", controller = "Movement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[InventorySystem.Entities.Entities.Movement]] Post(InventorySystem.Entities.DTOs.MovementCreateDto) on controller InventorySystem.Services.Controllers.MovementController (InventorySystem.Services).
+2022-06-07 09:06:05.453 -05:00 [INF] Executed action InventorySystem.Services.Controllers.MovementController.Post (InventorySystem.Services) in 55.0214ms
+2022-06-07 09:06:05.455 -05:00 [INF] Executed endpoint 'InventorySystem.Services.Controllers.MovementController.Post (InventorySystem.Services)'
+2022-06-07 09:06:05.457 -05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'InventorySystem.Core.Core.V1.ItemCore' while attempting to activate 'InventorySystem.Services.Controllers.MovementController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method9(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-06-07 09:06:05.502 -05:00 [INF] Request finished HTTP/2 POST https://localhost:44348/api/Movement application/json 115 - 500 - text/plain 184.0220ms
+2022-06-07 09:49:41.536 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-07 09:49:41.548 -05:00 [INF] Hosting environment: Development
+2022-06-07 09:49:41.548 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44348/swagger/index.html - -
+2022-06-07 09:49:41.549 -05:00 [INF] Content root path: C:\silena_dangond\backEnd\stage3BE\BackEnd_Stage3_Test3\InventorySystem.Services\InventorySystem.Services
+2022-06-07 09:49:41.740 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44348/swagger/index.html - - - 200 - text/html;charset=utf-8 193.5813ms
+2022-06-07 09:49:41.746 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44348/_framework/aspnetcore-browser-refresh.js - -
+2022-06-07 09:49:41.758 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44348/_framework/aspnetcore-browser-refresh.js - - - 200 12006 application/javascript;+charset=utf-8 10.4577ms
+2022-06-07 09:49:41.849 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44348/swagger/v1/swagger.json - -
+2022-06-07 09:49:41.940 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44348/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 90.8797ms
+2022-06-07 09:49:54.183 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44348/api/Item - -
+2022-06-07 09:49:54.212 -05:00 [INF] Executing endpoint 'InventorySystem.Services.Controllers.ItemController.Get (InventorySystem.Services)'
+2022-06-07 09:49:54.232 -05:00 [INF] Route matched with {action = "Get", controller = "Item"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[InventorySystem.Entities.Entities.Item]]] Get() on controller InventorySystem.Services.Controllers.ItemController (InventorySystem.Services).
+2022-06-07 09:49:55.975 -05:00 [INF] Executing ObjectResult, writing value of type 'InventorySystem.Entities.Utils.ResponseService`1[[System.Collections.Generic.List`1[[InventorySystem.Entities.Entities.Item, InventorySystem.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-06-07 09:49:55.996 -05:00 [INF] Executed action InventorySystem.Services.Controllers.ItemController.Get (InventorySystem.Services) in 1759.0741ms
+2022-06-07 09:49:55.999 -05:00 [INF] Executed endpoint 'InventorySystem.Services.Controllers.ItemController.Get (InventorySystem.Services)'
+2022-06-07 09:49:56.000 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44348/api/Item - - - 200 - application/json;+charset=utf-8 1817.1456ms
+2022-06-07 09:50:56.340 -05:00 [INF] Request starting HTTP/2 PUT https://localhost:44348/api/Item application/json 115
+2022-06-07 09:50:56.346 -05:00 [INF] Executing endpoint 'InventorySystem.Services.Controllers.ItemController.Put (InventorySystem.Services)'
+2022-06-07 09:50:56.367 -05:00 [INF] Route matched with {action = "Put", controller = "Item"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Boolean]] Put(InventorySystem.Entities.Entities.Item) on controller InventorySystem.Services.Controllers.ItemController (InventorySystem.Services).
+2022-06-07 09:50:56.576 -05:00 [INF] Executing ObjectResult, writing value of type 'InventorySystem.Entities.Utils.ResponseService`1[[System.Boolean, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-06-07 09:50:56.577 -05:00 [INF] Executed action InventorySystem.Services.Controllers.ItemController.Put (InventorySystem.Services) in 210.5995ms
+2022-06-07 09:50:56.578 -05:00 [INF] Executed endpoint 'InventorySystem.Services.Controllers.ItemController.Put (InventorySystem.Services)'
+2022-06-07 09:50:56.578 -05:00 [INF] Request finished HTTP/2 PUT https://localhost:44348/api/Item application/json 115 - 201 - application/json;+charset=utf-8 238.0543ms
+2022-06-07 09:51:09.788 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44348/api/Item - -
+2022-06-07 09:51:09.788 -05:00 [INF] Executing endpoint 'InventorySystem.Services.Controllers.ItemController.Get (InventorySystem.Services)'
+2022-06-07 09:51:09.788 -05:00 [INF] Route matched with {action = "Get", controller = "Item"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[InventorySystem.Entities.Entities.Item]]] Get() on controller InventorySystem.Services.Controllers.ItemController (InventorySystem.Services).
+2022-06-07 09:51:09.804 -05:00 [INF] Executing ObjectResult, writing value of type 'InventorySystem.Entities.Utils.ResponseService`1[[System.Collections.Generic.List`1[[InventorySystem.Entities.Entities.Item, InventorySystem.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-06-07 09:51:09.804 -05:00 [INF] Executed action InventorySystem.Services.Controllers.ItemController.Get (InventorySystem.Services) in 16.1063ms
+2022-06-07 09:51:09.804 -05:00 [INF] Executed endpoint 'InventorySystem.Services.Controllers.ItemController.Get (InventorySystem.Services)'
+2022-06-07 09:51:09.805 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44348/api/Item - - - 200 - application/json;+charset=utf-8 17.2771ms
+2022-06-07 10:02:50.045 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-06-07 10:02:50.075 -05:00 [INF] Hosting environment: Development
+2022-06-07 10:02:50.076 -05:00 [INF] Content root path: C:\silena_dangond\backEnd\stage3BE\BackEnd_Stage3_Test3\InventorySystem.Services\InventorySystem.Services
+2022-06-07 10:02:50.088 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44348/swagger/index.html - -
+2022-06-07 10:02:50.403 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44348/swagger/index.html - - - 200 - text/html;charset=utf-8 323.5949ms
+2022-06-07 10:02:50.403 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44348/_framework/aspnetcore-browser-refresh.js - -
+2022-06-07 10:02:50.424 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44348/_framework/aspnetcore-browser-refresh.js - - - 200 12006 application/javascript;+charset=utf-8 19.6666ms
+2022-06-07 10:02:50.536 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44348/swagger/v1/swagger.json - -
+2022-06-07 10:02:50.631 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44348/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 94.9184ms
+2022-06-07 10:03:24.461 -05:00 [INF] Request starting HTTP/2 POST https://localhost:44348/api/Movement application/json 116
+2022-06-07 10:03:24.537 -05:00 [INF] Executing endpoint 'InventorySystem.Services.Controllers.MovementController.Post (InventorySystem.Services)'
+2022-06-07 10:03:24.566 -05:00 [INF] Route matched with {action = "Post", controller = "Movement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[InventorySystem.Entities.Entities.Movement]] Post(InventorySystem.Entities.DTOs.MovementCreateDto) on controller InventorySystem.Services.Controllers.MovementController (InventorySystem.Services).
+2022-06-07 10:06:21.638 -05:00 [INF] Executing ObjectResult, writing value of type 'InventorySystem.Entities.Utils.ResponseService`1[[InventorySystem.Entities.Entities.Movement, InventorySystem.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-06-07 10:06:29.010 -05:00 [INF] Executed action InventorySystem.Services.Controllers.MovementController.Post (InventorySystem.Services) in 184440.9532ms
+2022-06-07 10:06:29.011 -05:00 [INF] Executed endpoint 'InventorySystem.Services.Controllers.MovementController.Post (InventorySystem.Services)'
+2022-06-07 10:06:29.012 -05:00 [INF] Request finished HTTP/2 POST https://localhost:44348/api/Movement application/json 116 - 201 - application/json;+charset=utf-8 184550.8790ms
+2022-06-07 10:07:15.119 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44348/api/Item/3 - -
+2022-06-07 10:07:15.125 -05:00 [INF] Executing endpoint 'InventorySystem.Services.Controllers.ItemController.Get (InventorySystem.Services)'
+2022-06-07 10:07:15.140 -05:00 [INF] Route matched with {action = "Get", controller = "Item"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[InventorySystem.Entities.Entities.Item]] Get(Int32) on controller InventorySystem.Services.Controllers.ItemController (InventorySystem.Services).
+2022-06-07 10:07:15.153 -05:00 [INF] Executing ObjectResult, writing value of type 'InventorySystem.Entities.Utils.ResponseService`1[[InventorySystem.Entities.Entities.Item, InventorySystem.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-06-07 10:07:15.155 -05:00 [INF] Executed action InventorySystem.Services.Controllers.ItemController.Get (InventorySystem.Services) in 14.4445ms
+2022-06-07 10:07:15.155 -05:00 [INF] Executed endpoint 'InventorySystem.Services.Controllers.ItemController.Get (InventorySystem.Services)'
+2022-06-07 10:07:15.155 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44348/api/Item/3 - - - 200 - application/json;+charset=utf-8 36.0221ms
+2022-06-07 10:07:38.684 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44348/Stock/3 - -
+2022-06-07 10:07:38.685 -05:00 [INF] Executing endpoint 'InventorySystem.Services.Controllers.ItemController.GetStockBalance (InventorySystem.Services)'
+2022-06-07 10:07:38.693 -05:00 [INF] Route matched with {action = "GetStockBalance", controller = "Item"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[InventorySystem.Entities.DTOs.ItemStockBalanceDto]] GetStockBalance(Int32) on controller InventorySystem.Services.Controllers.ItemController (InventorySystem.Services).
+2022-06-07 10:07:38.702 -05:00 [INF] Executing ObjectResult, writing value of type 'InventorySystem.Entities.Utils.ResponseService`1[[InventorySystem.Entities.DTOs.ItemStockBalanceDto, InventorySystem.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-06-07 10:07:38.703 -05:00 [INF] Executed action InventorySystem.Services.Controllers.ItemController.GetStockBalance (InventorySystem.Services) in 9.854ms
+2022-06-07 10:07:38.703 -05:00 [INF] Executed endpoint 'InventorySystem.Services.Controllers.ItemController.GetStockBalance (InventorySystem.Services)'
+2022-06-07 10:07:38.703 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44348/Stock/3 - - - 200 - application/json;+charset=utf-8 19.0672ms
